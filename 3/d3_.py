@@ -55,7 +55,7 @@ def find_gt_comp():
         sal = input("Введите интересующий уровень зп (или 0 для выхода):")
         try:
             sal = int(sal)
-        except TypeError:
+        except ValueError:
             print("попробуйте ввести еще раз")
             continue
         if (sal == 0): break
